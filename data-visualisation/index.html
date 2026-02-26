@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="src/leaflet.css" />
+	<link rel="stylesheet" href="src/leaflet-search.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" type="text/css">
+	<link rel="stylesheet" href="src/style.css" />
+
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	
+	<script type="text/javascript" src="src/leaflet-search.js"></script>
+	<script type="text/javascript" src="src/SliderControl.js"></script>
+	
+</head>
+
+<body>
+    <div id="map"></div>
+	<div id="charts">
+        <div id="topsidebar-content" style="padding-top: 10px; padding-left: 5px;">Welcome to the Dutch Urban Green Status dashboard!
+			<p style="font-size: 15px; text-align: justify; font-weight: 500; margin-top: 30px; margin-left: 10px; margin-right: 10px;"
+			>Green space in cities is valuable. Unlike forests or other nature areas, urban parks provide accessible green space close to residential areas. But how much urban green space is found in the different Dutch municipalities? How does your municipality compare with others? <br>This dashboard compares the urban green area with the area of residential space. A municipality’s status is defined by its urban green to residential ratio, its Urban Green Percentage (see below), and a ranking of all municipalities. A rank of 1 indicates the highest Urban Green Percentage.</p>
+			<p style="font-size: 15px; text-align: justify; font-weight: 600; margin-top: 30px; margin-left: 10px; margin-right: 10px;">Hover over a municipality to see its status, use the slider to see how the Netherlands has changed from previous years (2022-1996), or select a municipality to see its changes over time.</p>
+			<p style="font-size: 13px; text-align: justify; font-weight: lighter; margin-top: 30px; margin-bottom: 5px; margin-left: 10px; margin-right: 10px;"><strong>Urban Green Percentage (UGP):</strong> the variable on the map is defined as the UGP. It is calculated as follows:</p>
+			<p style="font-size: 13px; font-style: italic; text-align: center; font-weight: lighter; margin-top: 0px; margin-left: 10px; margin-bottom: 7px; margin-right: 10px;">urban green / (urban green + residential) * 100%</p>
+			<p style="font-size: 13px; text-align: justify; font-weight: lighter; margin-top: 0px; margin-left: 10px; margin-right: 10px;">A higher percentage indicates more urban green.</p>
+			<p style="font-size: 10px; font-style: italic; text-align: center; font-weight: 500; margin-top: 55px; margin-left: 10px; margin-right: 10px;">Made by Susanna van de Wetering, 2026,<br>for the course Data Visualization @ WUR</p>
+		</div>
+		<div id="sidebar-content" style="padding-top: 10px; padding-left: 10px;"></div>
+    </div>
+    <script type="text/javascript" src="webdata/UrbanGreenMunicipalities_2022.js"></script>
+	<script type="text/javascript" src="webdata/UrbanGreenMunicipalities_2020.js"></script>
+	<script type="text/javascript" src="webdata/UrbanGreenMunicipalities_2017.js"></script>
+	<script type="text/javascript" src="webdata/UrbanGreenMunicipalities_2015.js"></script>
+	<script type="text/javascript" src="webdata/UrbanGreenMunicipalities_2012.js"></script>
+	<script type="text/javascript" src="webdata/UrbanGreenMunicipalities_2010.js"></script>
+	<script type="text/javascript" src="webdata/UrbanGreenMunicipalities_2008.js"></script>	
+	<script type="text/javascript" src="webdata/UrbanGreenMunicipalities_2006.js"></script>
+	<script type="text/javascript" src="webdata/UrbanGreenMunicipalities_2003.js"></script>
+	<script type="text/javascript" src="webdata/UrbanGreenMunicipalities_2000.js"></script>
+	<script type="text/javascript" src="webdata/UrbanGreenMunicipalities_1996.js"></script>
+	<script type="text/javascript" src="webdata/UrbanGreenMunicipalities_1996_2022.js"></script>	
+	
+    <script type="text/javascript" src="src/leaflet.js"></script>
+	
+</body>
+
+</html>
