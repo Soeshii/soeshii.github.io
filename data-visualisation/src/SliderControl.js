@@ -51,7 +51,7 @@ L.Control.SliderControl = L.Control.extend({
 
         // Create a control sliderContainer with a jquery ui slider
         var sliderContainer = L.DomUtil.create('div', 'slider', this._container);
-        $(sliderContainer).append('<div class="slider-title">Use the slider to go back in time</div><div id="leaflet-slider" style="width:207px; margin-left: 15px; margin-bottom: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius: 5px; border: 0px; background-color: rgba(255, 255, 255, 0.8)"><div class="ui-slider-handle"></div><div id="slider-timestamp" style="width:207px; margin-top:13px; padding-top: 12px; background-color: rgba(255,255,255,0.8); text-align:center; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius:5px; font: 14px/16px Arial, Helvetica, sans-serif; font-weight: bold;  color: #5a5a5a;"></div></div>');
+        $(sliderContainer).append('<div class="slider-title">Use the slider to go back in time</div><div id="leaflet-slider" style="width:207px; margin-left: 15px; margin-bottom: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius: 5px; border: 0px; background-color: rgba(255, 255, 255, 0.8)"><div class="ui-slider-handle"></div><div id="slider-timestamp" style="width:207px; margin-top:13px; padding-top: 12px; background-color: rgba(255,255,255,0.8); text-align:center; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius:5px; font: 14px/16px Arial, Helvetica, sans-serif; font-weight: bold;  color: #39502b;"></div></div>');
         //Prevent map panning/zooming while using the slider
         $(sliderContainer).mousedown(function () {
             map.dragging.disable();

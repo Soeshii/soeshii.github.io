@@ -207,5 +207,5 @@ const ctx = document.getElementById('barchart');
         layout: { padding: 20 },
       scales: {
         x: { stacked: true },
-        y: { stacked: true, beginAtZero: true }}}});
+        y: { stacked: true, beginAtZero: true, ticks: {callback: function(value, index, values) {return value + "%";}} }}}});
 

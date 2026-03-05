@@ -13,14 +13,14 @@ html, body {
 
 #charts {
 	height: 100%;
-	width: 22.5%;
+	width: 345px;
 	background-color: rgba(255, 255, 255, 0.8);
 	top: 0;
 	right: 0;
 	position: absolute;
     font-family: Helvetica, sans-serif;
     padding-left: 10px;
-	z-index: 1;
+	z-index: 2;
 	box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px;
 	}
 
@@ -35,14 +35,48 @@ html, body {
 	color: #39502b;
 	}
 
-#map { width: 100%; height: 100%; position:absolute; }
+#bottomsidebar-content {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bolder;
+	text-align: left;
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-top: 0px;
+	color: #39502b;
+	}
 
-.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; right: 355px; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #5a5a5a; }
 
-/* padding-right: 400px; */
+#map { width: 100%; height: 100%; position:absolute; z-index: 0;}
 
-.legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; right: 355px; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; color: #39502b } .info h4 { margin: 0 0 5px; color: #5a5a5a; }
 
-/* #barchart {height: 400px} */
+.legend { text-align: left; line-height: 18px; color: #39502b; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
 
-.slider-title { padding: 0px 8px;  font: 14px/16px Arial, Helvetica, sans-serif; font-weight: bold; margin-bottom: 0px; color: #5a5a5a; }
+.slider-title { padding: 0px 14px;  font: 14px/14px Arial, Helvetica, sans-serif; font-weight: bolder; margin-bottom: -3px; color: #39502bb9; }
+
+#buttons {
+	right: 485px;
+	bottom: 27px;
+	z-index: 1;
+	position: fixed;
+	}
+
+button {
+    padding: 10px;
+	width: 125px;
+	margin-left: 10px;
+	font: 12px/16px Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	border: 0px;
+	background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px;
+    }
+
+#buttonTop {
+	margin-top: 30px;
+	color: #72a155 
+	}
+
+#buttonBottom {
+	color: #a15555 
+	}
