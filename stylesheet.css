@@ -1,0 +1,132 @@
+body {background-image: url('src/flowery_background_dark.png');
+      background-size: cover;
+      background-attachment: fixed;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px; 
+}
+
+
+
+#navbar {
+  position: fixed;
+  top: 10px;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 4px solid #ffffff20;
+  background-color: #ffffff10;
+  backdrop-filter: blur(15px);
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #faf6c073;
+  text-align: center;
+  padding: 15px 70px;
+  text-decoration: none;
+  font-size: 15pt;
+}
+
+#navbar a:hover {
+  color: #faf6c0c7;
+}
+
+#navbar a.active {
+  color: #faf6c0; 
+}
+
+.line {
+  border: 0;
+  height: 8px;
+  background-color: #faf6c0;
+  border-radius: 10px;
+  opacity: 20%;
+  margin-top: 25px;
+  margin-bottom: 50px;
+} 
+
+.main {
+  margin-left: 85px;
+  margin-right: 85px;
+  margin-top: 180px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.home_columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px; 
+}
+
+.education_columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.title {
+  font-family: "Inter";
+  font-weight: 700;
+  color: #faf6c0;
+  font-size: 50pt;
+  font-variant: small-caps;
+}
+
+.subtitle {
+  font-family: "Inter";
+  font-weight: 600;
+  color: #faf6c0;
+  font-size: 25pt;
+  margin-bottom: -20px;
+  margin-top: 20px;
+}
+
+.subsubtitle {
+  font-family: "Inter";
+  font-weight: 300;
+  font-style: italic;
+  color: #faf6c0;
+  font-size: 16pt;
+  margin-bottom: -20px;
+  margin-top: 20px;
+}
+
+.surtitle {
+  font-family: "Inter";
+  font-weight: 300;
+  color: #faf6c0;
+  font-size: 25pt;
+  margin-bottom: -20px;
+}
+
+.introtext {
+  font-family: "Inter";
+  font-weight: 300;
+  color: #faf6c0;
+  font-size: 18pt;
+  text-align: justify;
+}
+
+.text {
+  font-family: "Inter";
+  font-weight: 300;
+  color: #faf6c0;
+  font-size: 14pt;
+  text-align: justify;
+  margin-top: 40px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #faf6c0;
+}
+
+a:hover {
+  color: #faf6c0c7;
+}

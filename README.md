@@ -1,1 +1,0 @@
-# soeshii.github.io
