@@ -29,6 +29,8 @@ html {
   padding: 15px 70px;
   text-decoration: none;
   font-size: 15pt;
+  transition: color 0.4s ease;
+
 }
 
 #navbar a:hover {
@@ -128,25 +130,54 @@ a:link, a:visited {
 
 a:hover {
   color: #faf6c0c7;
+  transition: color 0.2s ease;
 }
 
-.projects-buttons button {
+.projects-buttons {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.projects-buttons a {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  box-sizing: border-box;
   border-radius: 25px;
   padding: 150px 10px;
-  /* margin: 35px; */
-  border: 4px solid #ffffff20;
-  margin-top: 20px;
-  background-color: #ffffff10;
-  backdrop-filter: blur(15px);
+  margin-top: 40px;
   color: #faf6c0;
+  text-align: center;
   font-family: "Inter";
   font-weight: 700;  
   font-size: 25pt;
-  opacity: 0.6;
+  text-decoration: none;
+  opacity: 0.9;
+  z-index: 1;
 }
 
-.projects-buttons button:hover {
-  opacity: 0.75;
-  background-color: #ffffff05;
-  /* color: #faf6c070; */
+.projects-buttons a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  
+  background-image: var(--bg-image);
+  background-color: #4c50359d;
+  background-blend-mode: color-burn;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center;
+
+  filter: blur(1px);
+  transition: background-color 0.4s ease;
+}
+
+.projects-buttons a:hover::before {
+  background-color: #4c503590;
+  filter: blur(0.2px);
 }
