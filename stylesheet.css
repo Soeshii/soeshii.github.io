@@ -8,6 +8,9 @@ html {
   scroll-padding-top: 150px; 
 }
 
+
+/* NAVBAR */
+
 #navbar {
   position: fixed;
   top: 10px;
@@ -40,6 +43,8 @@ html {
 #navbar a.active {
   color: #faf6c0; 
 }
+
+/* GENERAL */
 
 .line {
   border: 0;
@@ -133,6 +138,8 @@ a:hover {
   transition: color 0.2s ease;
 }
 
+/* PROJECTS */
+
 .projects-buttons {
   display: flex;
   width: 100%;
@@ -182,6 +189,23 @@ a:hover {
   filter: blur(0.2px);
 }
 
+.bdproject-page-img {
+  width: 60%;
+  position: relative; 
+  left: 20%; 
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.larproject-page-img {
+  width: 80%;
+  position: relative; 
+  left: 10%; 
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+/* GRAPHICS */
 
 .graphics-buttons {
   display: flex;
@@ -226,15 +250,9 @@ a:hover {
   background-position: center;
   opacity: .9;
 
-  /* filter: blur(1px); */
-  transition: background-color 0.4s ease;
 }
 
-/* .graphics-buttons a:hover::before {
-  background-color: #4c503590;
-  filter: blur(0.2px);
-} */
-
+/* CONTACT */
 
 .contact-buttons {
   display: flex;
