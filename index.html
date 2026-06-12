@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Susanna</title>
+<title>Susanna's Portfolio</title>
 <link rel="stylesheet" href="stylesheet.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 <script src="scripts/scrollingscript.js"></script>
 
-<!-- ADD project and graphic blocks -->
+<!-- ADD graphic blocks -->
 <!-- ADD experience -->
-<!-- ADD contact -->
 <!-- ADD profile photo -->
 <!-- ADD pages for each of the projects (for the more info + metadata for course etc) -->
 <!-- FIX why font different? -->
+
+<!-- Website scripted by me, GenAI (Gemini) was only used for solving coding problems -->
 
 </head>
 
@@ -42,7 +43,7 @@
     </div>
 
     <div class="col">
-      <img src="src/profilephoto.png" style = "width: 300px;margin-left: 20%;">
+      <img src="src/profilephoto.png" title="Placeholder image" style = "width: 300px;margin-left: 20%;">
     </div>  
 
   </div> 
@@ -73,7 +74,7 @@
       <div class="text"><b style="font-weight: 600;">Key Courses:</b> 
         Several Design Studios (<i>Park, Urban, Regional</i>), Landscape Aesthetics, Landscape Geography, Cultural & Historical Geography</div>
       <div class="text"><b style="font-weight: 600;">Thesis:</b> Creating Child-Friendly Spaces to Improve Social Interaction: a case study on Wilhelminaoord, a former Benevolent Colony (<i>Grade: 8</i>) 
-      <br><a href="projects/projects_template.html"><i style="font-weight:100; font-size: 11pt;">(Click here for more info)</i></a></div>
+      <br><a href="projects/bsc_thesis.html"><i style="font-weight:100; font-size: 11pt;">(Click here for more info)</i></a></div>
     </div>
 
   </div>
@@ -85,6 +86,43 @@
   <section id="experience">
   <div class="title">experience</div>
 
+  <div class="education_columns">
+    
+    <div class="col">
+      <div class="subtitle">Programme Committee Member</div>
+      <div class="subsubtitle">Wageningen University & Research</div>
+      <div class="subsubtitle">2025 - Present</div>
+      <div class="text">Student member of the MSc Geo-Information Science Programme Committee. Its objective is to advise on the stimulation and preservation of the programme’s quality. As part of the Agenda (sub-)Committee, my task is to prepare the meetings with the chair.</div>
+    </div>
+
+    <div class="col">
+      <div class="subtitle">Location Coordinator</div>
+      <div class="subsubtitle">Wageningen University & Research</div>
+      <div class="subsubtitle">2024 - Present</div>
+      <div class="text">Responsible for the coordination of the Forum building during the WUR BSc Open Days, which takes place twice a year. Tasks include preparatory meetings with the coordinators of other buildings and leading a team of ±25 students to ensure a smooth, safe, and welcoming operation.</div>
+    </div>
+
+  </div>
+  <br><br>
+  <div class="education_columns">
+
+    <div class="col">
+      <div class="subtitle">Student Assistant</div>
+      <div class="subsubtitle">Wageningen University & Research</div>
+      <div class="subsubtitle">2022 - Present</div>
+      <div class="text"><b>Computers, Communication & Information (2022-2025):</b> Student Assistant to the WUR introduction course on Microsoft Excel, PowerPoint, and Word. Tasks included answering student questions and grading exams.
+                        <br><br><b>Geoscripting (2026):</b> Student Assistant to the WUR course on using programming (R, Python) to solve geospatial problems. Starting in August 2026.</div>
+    </div>
+
+    <div class="col">
+      <div class="subtitle">Chair of Board</div>
+      <div class="subsubtitle">Study Association Genius Loci</div>
+      <div class="subsubtitle">2023 - 2024</div>
+      <div class="text">As Chair of the Genius Loci board, I was the face of the association and responsible for the functioning of the board. Tasks included setting up agendas and leading meetings.</div>
+    </div>
+
+  </div>
+
   <hr class="line" style="margin-top: 50px; margin-bottom: 75px;">
   </section>
 
@@ -93,10 +131,10 @@
   <div class="title">projects</div>
   <div class="subtitle">Click on the tiles for more information on my previous projects!</div>
  
-  <div class="projects-buttons" style="width:100%">
-    <a href="projects/projects_template.html" style="width:33%; --bg-image: url('src/profilephoto.png');">Landscape Architecture<br>BSc Thesis <div class="subsubtitle">2025</div></a>
+  <div class="projects-buttons">
+    <a href="projects/bsc_thesis.html" style="width:33%; --bg-image:  url('src/BScThesis_Thumbnail.png');">Landscape Architecture<br>BSc Thesis <div class="subsubtitle">2025</div></a>
     <a href="data-visualisation/index.html" target="_blank" style="width:33%; --bg-image: url('src/data-visualisation-dashboard.png');">Urban Green<br>Dashboard <div class="subsubtitle">2026</div></a>
-    <a href="" style="width:33%; --bg-image: url('src/big-data-dashboard-home.png')">Air Quality<br>Dashboard <div class="subsubtitle">2025</div></a>
+    <a href="projects/big_data_dashboard.html" style="width:33%; --bg-image: url('src/big-data-dashboard-home.png')">Air Quality<br>Dashboard <div class="subsubtitle">2025</div></a>
   </div>
 
   <hr class="line" style="margin-top: 50px; margin-bottom: 75px;">
@@ -105,9 +143,14 @@
   <!-- GRAPHICS -->
   <section id="graphics">
   <div class="title">graphics</div>
+  <div class="subtitle"><i>30 Day Map Challenge 2026:</i></div>
+
+  <div class="graphics-buttons">
+    <a style=" --bg-image:  url('src/MapChallenge_Day5_Earth.png');"></a>
+    <a style="--bg-image: url('src/MapChallenge_Day4_MyData.png');"></a>
+  </div>
   
-  <div class="introtext" style="font-style: italic;"><br>coming soon...
-  <br><br><i style="font-weight:100; font-size: 11pt;">Website design and development by me :)</i></div>
+  <div class="introtext" style="font-style: italic;"><br>More coming soon...</div>
 
   <hr class="line" style="margin-top: 50px; margin-bottom: 75px;">
   </section>
@@ -115,6 +158,16 @@
   <!-- CONTACT -->
   <section id="contact">
   <div class="title">contact</div>
+
+  <div class="contact-buttons">
+    <a href="https://www.linkedin.com/in/susannavandewetering/" target="_blank">Connect with me on LinkedIn</a>
+    <a href="mailto:susanna.vandewetering@gmail.com" target="_blank">Send me an E-Mail</a>
+    <a href="https://github.com/Soeshii" target="_blank">Check out my GitHub</a>
+  </div>
+
+  <div class="subsubtitle" style="margin-top: 40px; margin-bottom: 40px; font-size: 12pt;">© 2026 Susanna van de Wetering. All rights reserved.
+    <br>Website design and development by me :)
+  </div>
 
   </section>
 

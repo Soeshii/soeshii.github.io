@@ -1,4 +1,4 @@
-body {background-image: url('src/flowery_background_dark.png');
+body {background-image: url('src/flowery_background_dark.png'); /* background made by me */
       background-size: cover;
       background-attachment: fixed;
 }
@@ -19,6 +19,7 @@ html {
   font-family: "Inter";
   font-weight: 700;
   z-index: 100;
+  width: 98%;
 }
 
 #navbar a {
@@ -30,7 +31,6 @@ html {
   text-decoration: none;
   font-size: 15pt;
   transition: color 0.4s ease;
-
 }
 
 #navbar a:hover {
@@ -180,4 +180,91 @@ a:hover {
 .projects-buttons a:hover::before {
   background-color: #4c503590;
   filter: blur(0.2px);
+}
+
+
+.graphics-buttons {
+  display: flex;
+  /* width: 100%; */
+  gap: 20px;
+}
+
+.graphics-buttons a {
+  position: relative;
+  overflow: hidden;
+  width: 330.8px;
+  height: 467.8px;
+  /* flex: 1; */
+  box-sizing: border-box;
+  border-radius: 25px;
+  /* padding: 150px 10px; */
+  margin-top: 40px;
+  color: #faf6c0;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 700;  
+  font-size: 25pt;
+  text-decoration: none;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.graphics-buttons a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  
+  background-image: var(--bg-image);
+  /* background-color: #4c50359d; */
+  background-blend-mode: color-burn;
+  background-repeat: no-repeat; 
+  background-size:cover; 
+  background-position: center;
+  opacity: .9;
+
+  /* filter: blur(1px); */
+  transition: background-color 0.4s ease;
+}
+
+/* .graphics-buttons a:hover::before {
+  background-color: #4c503590;
+  filter: blur(0.2px);
+} */
+
+
+.contact-buttons {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.contact-buttons a {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 15px 10px;
+  margin-top: 40px;
+  border: 4px solid #ffffff20;
+  background-color: #ffffff10;
+  backdrop-filter: blur(3px);
+
+  color: #faf6c0;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 700;  
+  font-size: 15pt;
+  text-decoration: none;
+  opacity: 0.9;
+  z-index: 1;
+  transition: background-color 0.4s ease;
+}
+
+.contact-buttons a:hover {
+  background-color: #ffffff20;
 }
